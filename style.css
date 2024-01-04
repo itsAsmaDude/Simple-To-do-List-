@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.3;
+    font-family: "Inter", "sans-serif";
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2em 0;
+}
+header h1 {
+    font-family: 'Fraunces', 'Courier New', Courier, monospace;
+    color: #393a3a;
+    letter-spacing: 1px;
+}
+header a {
+    color : #111;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.app {
+    height: 100%;
+    padding: 2.2em 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+.app .tasks-maker {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.app .tasks-maker input {
+    flex: 1;
+    font-weight: 600;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 1.2rem;
+}
+.app .tasks-maker button {
+    cursor: pointer;
+    background-color: #1e1f20;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    padding: 1.2rem;
+    transition: 300ms ease-in-out;
+}
+.app .tasks-maker button:hover{
+    background-color: #2a2b2c;
+    scale: .99;
+}
+
+.app #tasks {
+    padding: 1.2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1em;
+}
+
+.app #tasks .task {
+    min-width: 400px;
+    background-color: #1e1f20;
+    padding: 1.5em 1em;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app #tasks .task button {
+    background: transparent;
+    color: #fff;
+    padding: 0 .6em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 230ms linear;
+}
+.app #tasks .task button:first-child:hover {
+    color: palegreen
+}
+.app #tasks .task button:last-child:hover {
+    color: orangered;
+}
+
+.done {
+    opacity: .9;
+    text-decoration: line-through;
+}
